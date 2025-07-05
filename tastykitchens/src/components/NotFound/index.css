@@ -1,0 +1,9 @@
+.page-not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link-not-found {
+  text-decoration: none;
+}

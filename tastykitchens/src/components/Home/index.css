@@ -1,0 +1,114 @@
+.restaurant-list-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 8px;
+  width: 100%;
+}
+.home-page-container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.products-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.selector-container {
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  width: 65%;
+  height: 50px;
+}
+.select-element {
+  height: 40px;
+  width: 50%;
+  font-size: 20px;
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.option-element {
+  font-size: 12px;
+  padding: 4px;
+}
+.page-selection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  margin: auto;
+}
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+}
+.about-and-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+@media (min-width: 768px) {
+  .page-selection-container {
+    width: 40%;
+  }
+  .restaurant-list-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .option-element {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .selector-container {
+    width: 30%;
+  }
+  .about-and-filter {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+}
+.page-number {
+  padding-right: 10px;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.page-num-heading {
+  font-size: 22px;
+  padding-right: 20px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+.pagination-btn {
+  background-color: transparent;
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+.pagination-btn:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.restaurants-about {
+  font-size: 20px;
+}
+.restaurants-heading {
+  height: 36px;
+  font-size: 32px;
+  padding-left: 30px;
+}

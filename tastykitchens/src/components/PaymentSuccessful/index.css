@@ -1,0 +1,27 @@
+.payment-successful-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.payment-home-page-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background: #f7931e;
+  cursor: pointer;
+  text-align: center;
+  width: 160px;
+  margin: auto;
+}
+
+.home-page-btn:hover {
+  scale: 1.1;
+}
+.link-item {
+  text-decoration: none;
+  color: black;
+}

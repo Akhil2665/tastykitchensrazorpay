@@ -1,0 +1,13 @@
+.carousal-image {
+  height: 240px;
+  width: 95%;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .carousal-image {
+    height: 380px;
+    width: 95%;
+    margin: 40px;
+  }
+}

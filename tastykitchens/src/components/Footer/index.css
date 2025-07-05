@@ -1,0 +1,48 @@
+.logo-name {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+.footer-container {
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 25%;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.footer-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-buttons-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-icon {
+  font-size: 36px;
+}
+@media (min-width: 768px) {
+  .social-buttons-container {
+    width: 16%;
+  }
+  .social-icon {
+    font-size: 56px;
+  }
+  .footer-container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
