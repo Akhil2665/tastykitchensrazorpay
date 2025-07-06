@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"nodemon backend/server.js\" \"npm run tastykitchens/start\"",
+    "start": "node backend/server.js",
+    "dev": "concurrently \"nodemon backend/server.js\" \"npm run tastykitchens/start\"",
     "tastykitchens/start": "cd tastykitchens && npm start"
   },
   "keywords": [],
@@ -16,10 +17,10 @@
     "crypto": "^1.0.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10",
     "razorpay": "^2.9.6"
   },
   "devDependencies": {
-    "concurrently": "^9.2.0"
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10"
   }
 }
