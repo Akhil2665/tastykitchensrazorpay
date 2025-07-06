@@ -43,6 +43,6 @@ export const paymentVerification = async (req, res) => {
     });
   }
   res.redirect(
-    `http://localhost:3000/paymentsuccessful/orderplaced?orderref=${razorpay_order_id}&paymentref=${razorpay_payment_id}`
+    `https://tastykitchensrazorpay.vercel.app/paymentsuccessful/orderplaced?orderref=${razorpay_order_id}&paymentref=${razorpay_payment_id}`
   );
 };
