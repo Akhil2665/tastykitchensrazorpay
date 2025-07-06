@@ -71,6 +71,28 @@ function Checkout() {
         },
       }
       const rzp = new Razorpay(options)
+
+      rzp.on('payment.failed', response => {
+        console.error('Payment failed:', response)
+        alert(
+          `Payment failed: ${response.error.description} (Code: ${response.error.code})`,
+        )
+      })
+      rzp.on('payment.success', response => {
+        console.log('Payment successful:', response)
+        history.push(
+          `/paymentsuccessful/orderplaced?orderref=${response.razorpay_order_id}&paymentref=${response.razorpay_payment_id}`,
+        )
+      })
+      rzp.on('payment.canceled', response => {
+        console.error('Payment canceled:', response)
+        alert('Payment was canceled. Please try again.')
+      })
+      // Open the Razorpay payment modal
+      console.log('Opening Razorpay payment modal...')
+      console.log('Razorpay options:', options)
+      console.log('Razorpay key:', key)
+
       rzp.open()
     } catch (error) {
       console.error('Error fetching Razorpay key:', error)

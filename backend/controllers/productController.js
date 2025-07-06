@@ -22,6 +22,11 @@ export const paymentProcessing = async (req, res) => {
 };
 
 export const getKey = async (req, res) => {
+  if (!process.env.RAZORPAY_API_KEY) {
+    return res.status(500).json({
+      error: "Razorpay API key is not configured",
+    });
+  }
   res.status(200).json({
     key: process.env.RAZORPAY_API_KEY,
     message: "Razorpay API key retrieved successfully",
